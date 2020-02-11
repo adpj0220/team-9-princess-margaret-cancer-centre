@@ -1,0 +1,23 @@
+<tool id="fa_gc_content_1" name="Test Concat" version="0.1.0">
+  <description>My hello world tool for galaxy</description>
+  <command interpreter="python">thello.py $input $input2 > $output</command>
+  <inputs>
+    <param format="fasta" name="input" type="text" label="First Parameter Name"/>
+    <param format="fasta" name="input2" type="text" label="Another Parameter"/>
+  </inputs>
+  <outputs>
+    <data format="tabular" name="output" />
+  </outputs>
+
+  <tests>
+    <!--<test>
+      <param name="input" value="fa_gc_content_input.fa"/>
+      <output name="out_file1" file="fa_gc_content_output.txt"/>
+    </test>-->
+  </tests>
+
+  <help>
+This is an example tool hello world!
+  </help>
+
+</tool>
