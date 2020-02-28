@@ -1,0 +1,32 @@
+<tool id="segway_tool_train" name="Train" version="0.0.1">
+  <description>Train model</description>
+  <command>
+  <![CDATA[
+segway '--cluster-opt=' 'train' --include_coords='$include_coords' --tracks-from='$tracks' --num-labels='$num_labels' '$genodata' './traindir' > $output
+]]>
+  </command>
+  
+  
+ 
+  <inputs>
+    <param name="include_coords" type="data" label="Include Coords"/>
+    <param name="tracks" type="data" label="Tracks"/>
+    <param name="num_labels" type="integer" value="2" min="1" label="Number of labels"/>
+    <param name="genodata" type="data" label="Genome Data"/>
+  </inputs>
+  <outputs>
+    <data auto_format="true" name="output" />
+  </outputs>
+
+  <tests>
+    <!--<test>
+      <param name="input" value="fa_gc_content_input.fa"/>
+      <output name="out_file1" file="fa_gc_content_output.txt"/>
+    </test>-->
+  </tests>
+
+  <help>
+This is an example tool hello world!
+  </help>
+
+</tool>
