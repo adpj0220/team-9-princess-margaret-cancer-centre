@@ -2,7 +2,7 @@
   <description>Train model</description>
   <command>
   <![CDATA[
-segway '--cluster-opt=' 'train' --include_coords='$include_coords' --tracks-from='$tracks' --num-labels='$num_labels' '$genodata' './traindir' > $output
+segway '--cluster-opt=' train --include-coords='$include_coords' --tracks-from='$tracks' --num-labels='$num_labels' '$genodata' './traindir' 2> $output
 ]]>
   </command>
   
