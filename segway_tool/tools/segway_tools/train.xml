@@ -10,12 +10,14 @@ segway '--cluster-opt=' train --include-coords='$include_coords' --exclude-coord
 
   <inputs>
     <param name="genodata" type="data" label="Genome Data"/>
-    <param name="include_coords" type="data" label="Include Coords"/>
-    <param name="exclude_coords" type="file" label="Exclude Coords"/>
-    <param name="tracks" type="data" label="Tracks"/>
-    <param name="max_train_rounds" type="integer" value="100" min="1" label="Max Train Rounds"/>
-    <param name="num_instances" type="integer" value="1" min="1" label="Number of Instances"/>
-    <param name="num_labels" type="integer" value="2" min="1" label="Number of labels"/>
+    <param name="include_coords" type="data" label="Include Coords" help="Limit to genomic coordinates in FILE (default all)"/>
+    <param name="exclude_coords" type="file" label="Exclude Coords" help="Filter out genomic coordinates in FILE (default none)"/>
+    <param name="tracks" type="data" label="Tracks" help="Append tracks from newline-delimited FILE to list of tracks to use"/>
+    <param name="max_train_rounds" type="integer" value="100" min="1" label="Max Train Rounds" help="Each training instance runs a maximum of NUM rounds (default 100)
+"/>
+    <param name="num_instances" type="integer" value="1" min="1" label="Number of Instances" help="Run NUM training instances, randomizing start parameters NUM
+times (default 1)"/>
+    <param name="num_labels" type="integer" value="2" min="1" label="Number of labels" help="Make SLICE segment labels (default 2)"/>
     <!-- <param name="resolution" type="res" value="1" label="Resolution"/> -->
   </inputs>
   <outputs>
