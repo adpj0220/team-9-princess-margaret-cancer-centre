@@ -1,13 +1,13 @@
-<tool id="segway_tool_train" name="Train" version="0.0.1">
-  <description>Train model</description>
+<tool id="segway_tool_train" name="Train model" version="0.0.1">
+  <description></description>
   <command>
   <![CDATA[
 segway '--cluster-opt=' train --include-coords='$include_coords' --tracks-from='$tracks' --num-labels='$num_labels' '$genodata' './traindir' 2> $output
 ]]>
   </command>
-  
-  
- 
+
+
+
   <inputs>
     <param name="include_coords" type="data" label="Include Coords"/>
     <param name="tracks" type="data" label="Tracks"/>
@@ -26,7 +26,6 @@ segway '--cluster-opt=' train --include-coords='$include_coords' --tracks-from='
   </tests>
 
   <help>
-This is an example tool hello world!
   </help>
 
 </tool>
