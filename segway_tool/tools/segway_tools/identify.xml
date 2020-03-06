@@ -1,15 +1,15 @@
 <tool id="segway_tool_identify" name="Annotate" version="0.0.1">
   <description></description>
-  <command>segway train --include-coords="$include_coords" --exclude-coords="$exclude_coords" --tracks-from="$tracks" --max-train-rounds='$max_train_rounds' --num-instances= '$num_instances' --num-labels="$num_labels" "$genodata" "./traindir" > $output</command>
+  <command>segway train --include-coords="$include_coords" --exclude-coords="$exclude_coords" --tracks-from="$tracks" --max-train-rounds='$max_train_rounds' --num-instances= '$num_instances' --num-labels="$num_labels" --resolution='$resolution' "$genodata" "./traindir" > $output</command>
   <inputs>
-    <param name="genodata" type="file" label="Genome Data"/>
+    <param name="genodata" type="file" label="Genomedata"/>
     <param name="include_coords" type="file" label="Include Coords"/>
     <param name="exclude_coords" type="file" label="Exclude Coords"/>
     <param name="tracks" type="file" label="Tracks"/>
     <param name="max_train_rounds" type="integer" value="100" min="1" label="Max Train Rounds"/>
     <param name="num_instances" type="integer" value="1" min="1" label="Number of Instances"/>
-    <param name="num_labels" type="integer" value="2" min="1" label="Number of labels"/>
-    <!-- <param name="resolution" type="res" value="1" label="Resolution"/> -->
+    <param name="num_labels" type="integer" value="2" min="1" label="Number of Labels"/>
+    <param name="resolution" type="integer" value="1" label="Resolution"/>
   </inputs>
   <outputs>
     <data auto_format="true" name="output" />
