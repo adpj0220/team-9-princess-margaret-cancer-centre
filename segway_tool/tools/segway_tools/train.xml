@@ -2,7 +2,7 @@
   <description></description>
   <command>
   <![CDATA[
-segway '--cluster-opt=' train --include-coords='$include_coords' --tracks-from='$tracks' --num-labels='$num_labels' '$genodata' './traindir' 2> $output
+segway '--cluster-opt=' train --include-coords='$include_coords' --exclude-coords="$exclude_coords" --tracks-from='$tracks' --max-train-rounds='$max_train_rounds' --num-instances= '$num_instances' --num-labels='$num_labels' '$genodata' './traindir' 2> $output
 ]]>
   </command>
 
@@ -11,7 +11,11 @@ segway '--cluster-opt=' train --include-coords='$include_coords' --tracks-from='
   <inputs>
     <param name="genodata" type="data" label="Genome Data"/>
     <param name="include_coords" type="data" label="Include Coords"/>
+    <param name="exclude_coords" type="file" label="Exclude Coords"/>
     <param name="tracks" type="data" label="Tracks"/>
+    <!-- <param name="resolution" type="res" value="1" label="Resolution"/> -->
+    <param name="max_train_rounds" type="integer" value="100" min="1" label="Max Train Rounds"/>
+    <param name="num_instances" type="integer" value="1" min="1" label="Number of Instances"/>
     <param name="num_labels" type="integer" value="2" min="1" label="Number of labels"/>
   </inputs>
   <outputs>
