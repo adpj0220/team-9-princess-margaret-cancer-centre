@@ -9,7 +9,7 @@ segway '--cluster-opt=' train --include-coords='$include_coords' --exclude-coord
 
 
   <inputs>
-    <param name="genodata" type="data" label="Genome Data"/>
+    <param name="genodata" type="data" label="Genomedata"/>
     <param name="include_coords" type="data" label="Include Coords" help="Limit to genomic coordinates in FILE (default all)"/>
     <param name="exclude_coords" type="file" label="Exclude Coords" help="Filter out genomic coordinates in FILE (default none)"/>
     <param name="tracks" type="data" label="Tracks" help="Append tracks from newline-delimited FILE to list of tracks to use"/>
