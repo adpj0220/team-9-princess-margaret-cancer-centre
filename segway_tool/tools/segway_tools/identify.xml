@@ -1,5 +1,5 @@
 <tool id="segway_tool_identify" name="Annotate" version="0.0.1">
-  <description>Annotate</description>
+  <description></description>
   <command>segway train --include-coords="$include_coords" --tracks-from="$tracks" --num-labels="$num_labels" "$genodata" "./traindir" > $output</command>
   <inputs>
     <param name="genodata" type="file" label="Genome Data"/>
