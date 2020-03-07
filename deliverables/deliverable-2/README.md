@@ -31,6 +31,7 @@ cp ~/team-project-9-princess-margaret-cancer-centre/segway_tool/tools/segway_too
 sudo systemctl start galaxy
 - And that's it, users are then able to access their own galaxy instances with our product through localhost, as well as choose to access it through a network by following the instructions on:
 https://galaxyproject.org/admin/get-galaxy/
+NOTE: To see how to test using our product, watch the video in the example folder.
 
 ## Deployment and Github Workflow
 - In our Git repository, we have created a folder called segway_tool. This folder is essentially our product, and all that is required to get Segway working within Galaxy.
