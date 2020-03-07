@@ -5,8 +5,8 @@
     <param name="genodata" type="data" label="Genomedata"/>
     <param name="include_coords" type="data" label="Include Coords" help="Limit to genomic coordinates in FILE (default all)"/>
     <param name="exclude_coords" type="data" label="Exclude Coords" help="Filter out genomic coordinates in FILE (default none)"/>
-    <param name="output_label" type="select" label="Output Label" help="">
-	<option value="full" selected=True>Print superlabel and sublabel</option>
+    <param name="output_label" type="select" label="Output Label" help="In the segmentation file, select which labels to print">
+	<option value="full" selected="True">Print superlabel and sublabel</option>
 	<option value="seg">Print only superlabel</option>
 	<option value="subseg">Print only sublabel</option>
     </param>
