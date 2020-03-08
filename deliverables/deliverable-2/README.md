@@ -14,10 +14,12 @@
 -   After training their model, users can change over to our annotate tool, again upload any required data and specifications easily through a graphic interface, users are then able to simply hit execute and Galaxy will then allow the user to download the results of the Segway analysis, which they can then use for further research.
 
 ## Instructions
--  To use our application, simply visit: http://segway.matrixdoge.com:8080/
+- To use our application, simply visit: http://segway.matrixdoge.com:8080/
 - From there, select Segway from the menu on the left side.
--  We have created these tools for galaxy.
--   Users then train their models with their data, annotate it, and then download their results.
+- We have created these tools for galaxy.
+- Users then train their models with their data, annotate it, and then download their results.
+- For a video demo, see https://youtu.be/nl9Gj3vzey4.
+
 ## Development requirements
 -  To use our product, a developer would need to download conda, then run the command: 
 	conda install -c bioconda segway
