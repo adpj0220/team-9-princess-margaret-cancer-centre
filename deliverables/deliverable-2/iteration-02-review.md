@@ -16,6 +16,7 @@
 #### Q2. Decisions that did not turn out as well as we hoped
 - Large group meetings without purpose were scheduled weekly and although helpful for allowing members to catch up, did not facilitate much progress as these meetings did not have clear objectives. 
 	- One example in which we fixed this is instead of having an arbitrary meeting we decided to pick a day to deploy, in which members with experience in AWS and AZURE were able to collaborate and significant progress was made in the form of our application successfully begin deployed to a server.
+	- Also, before we finally all had access to a server with Galaxy and Segway set up, several members were struggling with getting the software to work properly, (especially regarding Segway, because it only supports Linux). So, some of our earlier meetings did not have everyone at the same page to achieve the same goal.
 - The Trello application for assigning roles was not successful as our product had so much prerequisite knowledge requirements that some roles assigned were not even possible, and members were unsure of their tasks. Did not help facilitate any progress. 
 
 #### Q3. Planned changes
