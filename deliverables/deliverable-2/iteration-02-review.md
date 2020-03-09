@@ -9,9 +9,14 @@
 ## Process - Reflection
 
 #### Q1. Decisions that turned out well
-- Group chat through Facebook Messenger allowed for easy communication and discussion. Members were reachable for quick questions as opposed to long waits for a reply to email. All team members could see current discussion and provide their input.
-- Selecting one team member to be our main point of contact with the partner helped to facilitate communication and created a strong link between partner and group.
-- Use of the When2Meet application allowed for easy arrangements of meetings where members were optimally available. 
+•	Communicating through Facebook group chat
+o	The team chose to communicate through a group chat on Facebook’s Messenger which allowed for fluent discussion and prompt responses. This allowed for members to be readily reachable for spontaneous questions in contrast to the extended response times of typical email communications. All team members were also able to simultaneously view the discussion and provide input.
+•	Designating a member for communication management
+o	The team had designated a team member to employ as the main liaison between the group and the partner, for which she had helped facilitate all communications and foster a stronger relationship between the partner and the team. This had also allowed for much more efficient scheduling of meetings and ensured fluency in all group communications. 
+•	Using When2meet to plan meetings
+o	The use of the When2Meet platform allowed for easy arrangements of meetings. Given there 7 team members, scheduling without When2Meet would have been complicated. However, with When2Meet, individual members are able to independently input their availability and then the group was able to collectively observe an optimal meeting time. 
+•	User of Quercus group announcements
+o	The clever use of Quercus group announcements allowed the team to easily access information such as shared log in information and instructions. This resolved the group chat problem that team members would have to scroll past an abundance of new relevant information to find a piece of relevant information. 
 
 #### Q2. Decisions that did not turn out as well as we hoped
 - Large group meetings without purpose were scheduled weekly and although helpful for allowing members to catch up, did not facilitate much progress as these meetings did not have clear objectives. 
