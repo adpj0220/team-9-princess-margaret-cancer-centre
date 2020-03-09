@@ -33,4 +33,5 @@
 - Our partner was very pleased with our progress and accepted the progress we made as it is right on track with their end vision.
 - Partner requested minor changes, for example Segway 3.0 uses the term "annotate" as opposed to "identify" and requested we change the tool name, which we were able to do.
 - Other such changes were input orderings and other information they wanted available. As our partner is far more experienced with the Segway application and its functionality we are adding their suggestions so that it may better fit their vision.
+- We found it might be useful for our partner using the tool to further transfer the output (genome result) to some genome browser when we playing with Segway. We presented this idea in the meeting, and our partner was very pleased of adding this feature.
 - From this demo we learned that it is important to keep our partner in the loop as development continues because they are far more knowledge about Segway and what functionality they want supported.
