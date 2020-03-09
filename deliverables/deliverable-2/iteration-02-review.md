@@ -9,20 +9,22 @@
 ## Process - Reflection
 
 #### Q1. Decisions that turned out well
-•	Communicating through Facebook group chat
-o	The team chose to communicate through a group chat on Facebook’s Messenger which allowed for fluent discussion and prompt responses. This allowed for members to be readily reachable for spontaneous questions in contrast to the extended response times of typical email communications. All team members were also able to simultaneously view the discussion and provide input.
-•	Designating a member for communication management
-o	The team had designated a team member to employ as the main liaison between the group and the partner, for which she had helped facilitate all communications and foster a stronger relationship between the partner and the team. This had also allowed for much more efficient scheduling of meetings and ensured fluency in all group communications. 
-•	Using When2meet to plan meetings
-o	The use of the When2Meet platform allowed for easy arrangements of meetings. Given there 7 team members, scheduling without When2Meet would have been complicated. However, with When2Meet, individual members are able to independently input their availability and then the group was able to collectively observe an optimal meeting time. 
-•	User of Quercus group announcements
-o	The clever use of Quercus group announcements allowed the team to easily access information such as shared log in information and instructions. This resolved the group chat problem that team members would have to scroll past an abundance of new relevant information to find a piece of relevant information. 
+- Communicating through Facebook group chat
+	- The team chose to communicate through a group chat on Facebook’s Messenger which allowed for fluent discussion and prompt responses. This allowed for members to be readily reachable for spontaneous questions in contrast to the extended response times of typical email communications. All team members were also able to simultaneously view the discussion and provide input.
+- Designating a member for communication management
+	- The team had designated a team member to employ as the main liaison between the group and the partner, for which she had helped facilitate all communications and foster a stronger relationship between the partner and the team. This had also allowed for much more efficient scheduling of meetings and ensured fluency in all group communications. 
+- Using When2meet to plan meetings
+	- The use of the When2Meet platform allowed for easy arrangements of meetings. Given there 7 team members, scheduling without When2Meet would have been complicated. However, with When2Meet, individual members are able to independently input their availability and then the group was able to collectively observe an optimal meeting time. 
+- User of Quercus group announcements
+	- The clever use of Quercus group announcements allowed the team to easily access information such as shared log in information and instructions. This resolved the group chat problem that team members would have to scroll past an abundance of new relevant information to find a piece of relevant information. 
 
 #### Q2. Decisions that did not turn out as well as we hoped
-- Large group meetings without purpose were scheduled weekly and although helpful for allowing members to catch up, did not facilitate much progress as these meetings did not have clear objectives. 
-	- One example in which we fixed this is instead of having an arbitrary meeting we decided to pick a day to deploy, in which members with experience in AWS and AZURE were able to collaborate and significant progress was made in the form of our application successfully begin deployed to a server.
+- Group meetings without a clear objective 
+	- The team scheduled weekly group meetings that often did not have clear objectives. Thus, although the meetings were helpful for allowing members to catch up on each individual’s progress, it did not facilitate much group progress.
+	- After a couple of meetings, we noticed this issue and made changes by setting a small goal for each meeting. An example would be when we decided to pick a day to deploy, in which members with experience in AWS and AZURE were able to collaborate and make significant progress in the form of our application successfully begin deployed to a server.
 	- Also, before we finally all had access to a server with Galaxy and Segway set up, several members were struggling with getting the software to work properly, (especially regarding Segway, because it only supports Linux). So, some of our earlier meetings did not have everyone at the same page to achieve the same goal.
-- The Trello application for assigning roles was not successful as our product had so much prerequisite knowledge requirements that some roles assigned were not even possible, and members were unsure of their tasks. Did not help facilitate any progress. 
+- Using Trello to manage tasks
+	- The Trello application for assigning roles was not successful as our product had so much prerequisite knowledge requirements that some roles assigned were way to broad and there is no way to make it more specific (ex. Reading and understanding the Galaxy tool shed before we can start coding for the project). Due to this, members were unsure of their tasks. Overall, Trello did not help facilitate much progress.
 
 #### Q3. Planned changes
 -   As mentioned above we are now scheduling specific meetings with goals so that all together we are able to accomplish more, and members are better utilizing their skills and time.
