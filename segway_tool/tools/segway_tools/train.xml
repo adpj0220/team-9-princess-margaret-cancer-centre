@@ -24,7 +24,7 @@ times"/>
     <param name="resolution" type="integer" value="1" label="Resolution" help="Downsample to every RES bp"/>
   </inputs>
   <outputs>
-    <data auto_format="true" name="output" />
+    <data format="fast5.tar.gz" name="output" />
   </outputs>
 
   <tests>
