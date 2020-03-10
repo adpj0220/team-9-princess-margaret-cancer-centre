@@ -11,11 +11,12 @@
 #if str($virtual_evidence) == 'None':
     #set virtual_evidence = ''
 #end if
-segway identify --include-coords="$include_coords" --exclude-coords="$exclude_coords" --output-label=\""$output_label"\" --seg-table="$seg_table" --virtual-evidence="$virtual_evidence" "$genodata" "./traindir" "./annotatedir" > $output
+segway identify --include-coords="$include_coords" --exclude-coords="$exclude_coords" --output-label=\""$output_label"\" --seg-table="$seg_table" --virtual-evidence="$virtual_evidence" "$genodata" "$traindir" "./annotatedir" > $output
 ]]>
   </command>
 
   <inputs>
+    <param name="traindir" type="data" label="Trained data"/>
     <param name="genodata" type="data" label="Genomedata"/>
     <param name="include_coords" type="data" label="Include Coords" help="Limit to genomic coordinates in FILE (default all)"/>
     <param name="exclude_coords" type="data" optional="true" label="Exclude Coords" help="Optional: Filter out genomic coordinates in FILE"/>
