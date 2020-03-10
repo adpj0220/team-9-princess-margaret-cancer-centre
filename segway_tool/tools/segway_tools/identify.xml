@@ -14,8 +14,8 @@
 	<option value="subseg">Sublabel only</option>
 	<option value="full">Superlabel and sublabel</option>
     </param>
-    <param name="seg_table" type="file" label="Segment hyperparameters" help="Load segment hyperparameters from FILE (default none)"/>
-    <param name="virtual_evidence" type="file" label="Virtual Evidence" help="virtual evidence with priors for labelsat each position in FILE (default none)"/>
+    <param name="seg_table" type="data" label="Segment hyperparameters" help="Load segment hyperparameters from FILE (default none)"/>
+    <param name="virtual_evidence" type="data" label="Virtual Evidence" help="virtual evidence with priors for labelsat each position in FILE (default none)"/>
   </inputs>
   <outputs>
     <data auto_format="true" name="output" />
