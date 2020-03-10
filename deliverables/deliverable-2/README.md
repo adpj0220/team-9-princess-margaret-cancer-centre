@@ -27,21 +27,22 @@ This will install Segway, as well as bioconda, which contains the necessary pyth
 -  A developer would then need to download and build a galaxy server, which can be found here:
 https://galaxyproject.org/admin/get-galaxy/
 NOTE: Segway is only supported on Linux
-- A user will then copy the tools we have built from our repo into the galaxy configuration file as so:
+-  As galaxy is a dependency of our product and is out of our project scope, we assume that the galaxy server is configured by the server administrator with all the required packages and dependencies.
+-  A user will then copy the tools we have built from our repo into the galaxy configuration file as so:
 cp ~/team-project-9-princess-margaret-cancer-centre/segway_tool/tools/segway_tools ~/galaxy/tools/segway_tools
--  Then simply start the server with:
-sudo systemctl start galaxy
+-  After installing our tool, the user need to restart the galaxy server.
 - And that's it, users are then able to access their own galaxy instances with our product through localhost, as well as choose to access it through a network by following the instructions on:
 https://galaxyproject.org/admin/get-galaxy/
-NOTE: To see how to test using our product, watch the video in the example folder.
+NOTE: To see how to test using our product, watch the video in the instruction section.
 
 ## Deployment and Github Workflow
+- We have a python deployment script deployment_server.py. It runs as a web service to dispatch deployment tasks.
 - In our Git repository, we have created a folder called segway_tool. This folder is essentially our product, and all that is required to get Segway working within Galaxy.
-- Within this folder, we choose our tool to work on, update the xml file, and push.
-- Then via a simple script, we visit the link:
+- Within this folder, we choose our tool to work on, update the xml file, commit and push.
+- To apply changes we just made to github, we visit the deployment service's link:
 http://segway.matrixdoge.com:8081/
-Where we will be prompted for a password, which is: galaxyS
-- This will then tell our server to pull from the repository, copy our tools into the galaxy configuration files, and restart the server.
+Where we will be prompted for a password, which is defined in deployment_server.py. By default the password is "YourDeployPassword1234".
+- This will then tell our server to stop the galaxy server, pull from the repository, copy our tools into the galaxy configuration files, and restart the server.
 - When group members are finished working a specific part they are then able to easily update our Galaxy instance so that changes can be visible to all members immediately. 
 - We choose this method because team members are able to make small, incremental improvements, and then immediately make them visible to all other members via simple scripts, so deployment is streamlined and easy. 
 
