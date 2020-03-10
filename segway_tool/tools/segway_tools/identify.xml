@@ -11,7 +11,7 @@
 #if str($virtual_evidence) == 'None':
     #set virtual_evidence = ''
 #end if
-segway identify --include-coords="$include_coords" --exclude-coords="$exclude_coords" --output_label=\""$output_label"\" --seg-table="$seg_table" --virtual-evidence="$virtual_evidence" "$genodata" "./traindir" "./annotatedir" > $output
+segway identify --include-coords="$include_coords" --exclude-coords="$exclude_coords" --output-label=\""$output_label"\" --seg-table="$seg_table" --virtual-evidence="$virtual_evidence" "$genodata" "./traindir" "./annotatedir" > $output
 ]]>
   </command>
 
