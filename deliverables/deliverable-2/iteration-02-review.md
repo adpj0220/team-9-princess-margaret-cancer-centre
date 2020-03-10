@@ -27,10 +27,13 @@
 	- The Trello application for assigning roles was not successful as our product had so mua high knowledge prerequisite that some roles assigned were too broad and it was impossible to provide specifics, e.g. "Reading and understanding the Galaxy tool shed before we can start coding for the project". Due to this, members were unsure of their tasks. Overall, Trello did not help facilitate much progress.
 
 #### Q3. Planned changes
--   As mentioned above we are now scheduling meetings with specific goals so that we are able to accomplish more, and members are better utilizing their skills and time.
+- As mentioned above we are now scheduling meetings with specific goals so that we are able to accomplish more, and members are better utilizing their skills and time.
 	-  For example those experienced with hosting will make sure to all pick a time they're free to meet.
 	-  Also, we tried to learn the content/usage of the two tools (Segway && Galaxy) we want to combine together in our meeting, after we realized that we had to much more learning than the actual coding part. We help each other to understand every part of the process, especially help to make sure those who use the OS that not supports Segway/Galaxy to know things at the same level. When it comes to actual coding part, we discussed together how to solve certain problems, and use the machine that supports the tools to test our ideas.
+	-  In addition, since we only need to modify certain simple xml files, we always discuss how we might achieve certain goal in the meeting, and then modify the file and see the progress.
 - We are creating a weekly When2Meet so we cam quickly set up meetings and know when members are available.
+- Instead of letting everyone struggling with the pre-preparing processing including installing and exploring the original tools (Segway && Galaxy), we finally use a remote server with these tools ready for everyone to see the actural progress being made.
+
 
 ## Product - Review
 
