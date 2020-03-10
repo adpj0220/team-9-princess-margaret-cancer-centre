@@ -3,9 +3,9 @@
 # Segway/Princess Margaret Research
 
 ## Description
-- Our application allows users to easily access the genome software Segway through an instance of a galaxy server which we have setup.
+- Our application allows users to easily access the genome software Segway through an instance of a Galaxy server which we have set up.
 - This will allow users to easily access the functionality of Segway from any computer without needing to download the program and understand the command line functionality as we have created a simple and understandable interface for users.
-- Before the deployment of our galaxy server, the only way to use Segway was to download the software onto ones own computer and use it through the command line. Segway only functions on Linux, so by hosting a public instance of it, we have greatly expanded accessibility to Segway, which is our partners main objective, and their vision of a MVP.
+- Before the deployment of our galaxy server, the only way to use Segway was to download the software onto ones own computer and use it through the command line. Segway only functions on Linux, so by hosting a public instance of it, we have greatly expanded accessibility to Segway, which is our partners main objective, and their vision of an MVP.
 
 ## Key Features
 -   Users are now able to upload their genomedata and other necessary files easily to our application through Galaxy's simple user interface. 
