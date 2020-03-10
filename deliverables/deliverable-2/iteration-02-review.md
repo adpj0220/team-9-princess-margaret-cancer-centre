@@ -29,6 +29,7 @@
 #### Q3. Planned changes
 -   As mentioned above we are now scheduling meetings with specific goals so that we are able to accomplish more, and members are better utilizing their skills and time.
 	-  For example those experienced with hosting will make sure to all pick a time they're free to meet.
+	-  Also, we tried to learn the content/usage of the two tools (Segway && Galaxy) we want to combine together in our meeting, after we realized that we had to much more learning than the actual coding part. We help each other to understand every part of the process, especially help to make sure those who use the OS that not supports Segway/Galaxy to know things at the same level. When it comes to actual coding part, we discussed together how to solve certain problems, and use the machine that supports the tools to test our ideas.
 - We are creating a weekly When2Meet so we cam quickly set up meetings and know when members are available.
 
 ## Product - Review
@@ -40,5 +41,5 @@
 - Our partner was very pleased with our progress and asserted it was on track with their vision of the product.
 - The partner requested minor changes. For example, Segway 3.0 uses the term "annotate" as opposed to "identify" and requested we change the tool name, which we were able to do.
 - Other such changes were input orderings and other information they wanted available. As our partner is far more experienced with the Segway application and its functionality we are adding their suggestions so that it may better fit their vision.
-- We found it might be useful for our partner using the tool to further transfer the output (genome result) to some genome browser when we were exploring Segway. We presented this idea in the meeting, and our partner was very pleased with the idea of this feature.
+- We found it might be useful for our partner using the tool to further transfer the output (genome result) to some genome browser when we were exploring Segway. We presented this idea in the meeting, and our partner was very pleased with having this feature.
 - From this demo we learned that it is important to keep our partner in the loop as development continues because they are far more knowledge about Segway and have a clear idea of what functionality they want supported.
