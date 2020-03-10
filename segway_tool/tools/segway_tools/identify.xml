@@ -8,7 +8,7 @@
   <inputs>
     <param name="genodata" type="data" label="Genomedata"/>
     <param name="include_coords" type="data" label="Include Coords" help="Limit to genomic coordinates in FILE (default all)"/>
-    <param name="exclude_coords" type="file" label="Exclude Coords" help="Filter out genomic coordinates in FILE (default none)"/>
+    <param name="exclude_coords" type="data" label="Exclude Coords" help="Filter out genomic coordinates in FILE (default none)"/>
     <param name="output_label" type="select" label="Output Label" help="In the segmentation file, select which labels to print">
 	<option value="seg" selected="True">Superlabel only</option>
 	<option value="subseg">Sublabel only</option>
