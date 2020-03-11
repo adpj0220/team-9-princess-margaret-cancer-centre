@@ -26,6 +26,8 @@
 	- Once all files have uploaded successfully, select Segway under the Tools menu, then select Train model.
 	- Update Genomedata/Include Coords/Exclude Coords/Tracks fields with uploaded files by selecting files from the dropdown of each field. Can also modify other fields (ex. Max Train Rounds) to get desired result. 
 	- Click on the execute button at the end of the page and train models.
+- To annotate trained data:
+	- For a video demo, see https://youtu.be/uYfwhuy4hEI.
 
 
 ## Development requirements
