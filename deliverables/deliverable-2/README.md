@@ -24,10 +24,16 @@
 	- Select Upload File to upload all necessary files (we have provided sample files in the d2_test_files folder).
 	- Uploaded files will reside on the right side of the interface under the History menu.
 	- Once all files have uploaded successfully, select Segway under the Tools menu, then select Train model.
-	- Update Genomedata/Include Coords/Exclude Coords/Tracks fields with uploaded files by selecting files from the dropdown of each field. Can also modify other fields (ex. Max Train Rounds) to get desired result. 
+	- Update Genomedata/Include Coords/Exclude Coords/Tracks fields with uploaded files by selecting files from the dropdown of each field. Users can also modify other fields (ex. Max Train Rounds) to get desired result. 
 	- Click on the execute button at the end of the page and train models.
+	- Users can view the status of the training on the right of the interface under the History menu. Upon successful execution of Train model, users can choose to download the output files. 
 - To annotate trained data:
 	- For a video demo, see https://youtu.be/uYfwhuy4hEI.
+	- After training models with data, users can select Annotate under Segway in the Tools menu to annotate the data.
+	- Users can then input required data files by selecting files from the dropdowns of each field (Trained data/Genomedata/Include Coords).
+	- Lastly, click on the Execute button to annotate the data. 
+	- Users can view the status of the annotation on the right of the interface under the History menu. Upon successful execution of Annotate, users can choose to download the annotation files. 
+	
 
 
 ## Development requirements
