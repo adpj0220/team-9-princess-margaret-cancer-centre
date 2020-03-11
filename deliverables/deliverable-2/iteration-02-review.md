@@ -17,6 +17,11 @@
 	- The use of the When2Meet platform allowed for easy arrangements of meetings. Given there 7 team members, scheduling without When2Meet would have been complicated. However, with When2Meet, individual members are able to independently input their availability and then the group was able to collectively observe an optimal meeting time. 
 - Use of Quercus group announcements
 	- The clever use of Quercus group announcements allowed the team to easily access information such as shared log in information and instructions. This resolved the group chat problem that team members would have to scroll past a plethora of messages to find a single piece of information. 
+- Communicate with the TA frequently
+	- What we should do to achieve our MVP is quite different from other normal development projects, especially regarding the fact that the much heavier portion of the project is to setup and understand the "dependencies" rather than to do actual coding. So, we involve Adam in our first meeting, and he helped us to understand what our specific jobs would be like. We also ask for help to get the remote server access when we found that most of our teammates cannot succesfully make the tools we need to work on their own computer. Our frequent commmunication with the TA really made it easier for us to make progress on our project.
+
+- Communicate with the partner frequently
+	- Our project is also different from others as we have our partner know much more about the tools we need to combine than us. So we frequently met up with our parter (the research leader and the technical assistant who actually implement one tool (Segway)) to get their help to understand and use the original tool. For example, they suggested us to first try a simple project on Galaxy in order to see how it works. We did so (the galaxy_tool_example) and really got more understanding about what we should do to arrange the deployment in Galaxy.
 
 #### Q2. Decisions that did not turn out as well as we hoped
 - Group meetings without a clear objective 
