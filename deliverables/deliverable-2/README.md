@@ -53,14 +53,14 @@ NOTE: To see how to test using our product, watch the video in the instruction s
 
 ## Deployment and Github Workflow
 - We have a python deployment script deployment_server.py. It runs as a web service to dispatch deployment tasks.
-- In our Git repository, we have created a folder called segway_tool. This folder is essentially our product, and all that is required to get Segway working within Galaxy.
+- In our Git repository, we have created a folder called segway_tool. This folder contains most of what is required for Segway to work within Galaxy.
 - Within this folder, we choose our tool to work on, update the xml file, commit and push.
 - To apply changes we just made to github, we visit the deployment service's link:
 http://segway.matrixdoge.com:8081/
-Where we will be prompted for a password, which is defined in deployment_server.py. By default, the password is "YourDeployPassword1234".
+where we will be prompted for a password, which is defined in deployment_server.py. By default, the password is "YourDeployPassword1234".
 - This will then tell our server to stop the galaxy server, pull from the repository, copy our tools into the galaxy configuration files, and restart the server.
 - When group members are finished working a specific part, they are then able to easily update our Galaxy instance so that changes can be visible to all members immediately. 
-- We choose this method because team members are able to make small, incremental improvements, and then immediately make them visible to all other members via simple scripts, so deployment is streamlined and easy. 
+- We chose this method because team members are able to make small, incremental improvements, and then immediately make them visible to all other members via simple scripts, so deployment is streamlined and easy. 
 
 ## Licenses
 - We have applied the GPLv2 license to our codebase.
