@@ -1,4 +1,7 @@
 <tool id="segway_tool_train" name="Train model" version="0.0.1">
+  <requirements>
+    <requirement type="package" version="3.0">segway</requirement>
+  </requirements>
   <description></description>
   <command>
   <![CDATA[
