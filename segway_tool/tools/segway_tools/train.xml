@@ -14,13 +14,13 @@ tar -zcvf $output ./traindir
 
   <inputs>
     <param name="genodata" type="data" label="Genomedata"/>
-    <param name="include_coords" type="data" label="Include Coords" help="Limit to genomic coordinates in FILE (default all)"/>
-    <param name="exclude_coords" type="data" optional="true" label="Exclude Coords" help="Filter out genomic coordinates in FILE (default none)"/>
-    <param name="tracks" type="data" label="Tracks" help="Append tracks from newline-delimited FILE to list of tracks to use"/>
-    <param name="max_train_rounds" type="integer" value="100" min="1" label="Max Train Rounds" help="Each training instance runs a maximum of NUM rounds"/>
-    <param name="num_instances" type="integer" value="1" min="1" label="Number of Instances" help="Run NUM training instances, randomizing start parameters NUM
+    <param name="include_coords" type="data" label="Include Coords" help="Optional: Include only genomic coordinates in FILE"/>
+    <param name="exclude_coords" type="data" optional="true" label="Exclude Coords" help="Optional: Filter out genomic coordinates in FILE"/>
+    <param name="tracks" type="data" label="Tracks" help="Append tracks from FILE to list of tracks to use"/>
+    <param name="max_train_rounds" type="integer" value="100" min="1" label="Max Train Rounds" help="Each training instance runs a maximum of specified rounds"/>
+    <param name="num_instances" type="integer" value="1" min="1" label="Number of Instances" help="Run specified number of training instances, randomizing start parameters by the specified number of
 times"/>
-    <param name="num_labels" type="integer" value="2" min="1" label="Number of labels" help="Make SLICE segment labels"/>
+    <param name="num_labels" type="integer" value="2" min="1" label="Number of labels" help="Make specified number of segment labels"/>
     <param name="resolution" type="integer" value="1" label="Resolution" help="Downsample to every RES bp"/>
   </inputs>
   <outputs>
