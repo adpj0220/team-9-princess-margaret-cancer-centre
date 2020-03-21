@@ -15,11 +15,13 @@
 		#set virtual_evidence = ''
 	#end if
 tar -zxvf $traindir &&
-segway identify --include-coords="$include_coords" --exclude-coords="$exclude_coords" --output-label=\""$output_label"\" --seg-table="$seg_table" --virtual-evidence="$virtual_evidence" "$genodata" "traindir" "annotatedir" 2> /dev/null &&
+segway identify --include-coords="$include_coords" "$genodata" "traindir" "annotatedir" 2> /dev/null &&
 tar -zcvf $output "annotatedir"
 ]]>
   </command>
-
+  <!-- 
+  segway identify --include-coords="$include_coords" --exclude-coords="$exclude_coords" --output-label=\""$output_label"\" --seg-table="$seg_table" --virtual-evidence="$virtual_evidence" "$genodata" "traindir" "annotatedir" 2> /dev/null &&
+  -->
   <inputs>
     <param name="traindir" type="data" label="Trained data"/>
     <param name="genodata" type="data" label="Genomedata"/>
