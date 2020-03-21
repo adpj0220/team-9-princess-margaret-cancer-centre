@@ -15,7 +15,7 @@
 		#set virtual_evidence = ''
 	#end if
 tar -zxvf $traindir &&
-segway identify --include-coords="$include_coords" --exclude-coords="$exclude_coords" "$genodata" "traindir" "annotatedir" 2> /dev/null &&
+segway identify --include-coords="$include_coords" --exclude-coords="$exclude_coords" --output-label=\""$output_label"\" "$genodata" "traindir" "annotatedir" 2> /dev/null &&
 tar -zcvf $output "annotatedir"
 ]]>
   </command>
