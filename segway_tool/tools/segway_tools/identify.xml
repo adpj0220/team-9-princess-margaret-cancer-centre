@@ -4,9 +4,18 @@
   </requirements>
   <description></description>
   <command>
-  <![CDATA[
+<![CDATA[
+	#if str($exclude_coords) == 'None':
+	  	#set exclude_coords = ''
+	#end if
+	#if str($seg_table) == 'None':
+		#set seg_table = ''
+	#end if
+	#if str($virtual_evidence) == 'None':
+		#set virtual_evidence = ''
+	#end if
 tar -zxvf $traindir &&
-segway identify --include-coords="$include_coords" "$genodata" "traindir" "annotatedir" 2> /dev/null &&
+segway identify --include-coords="$include_coords" --exclude-coords="$exclude_coords" --output-label="$output_label" --seg_table="$seg_table" --virtual_evidence="$virtual_evidence" "$genodata" "traindir" "annotatedir" 2> /dev/null &&
 tar -zcvf $output "annotatedir"
 ]]>
   </command>
@@ -14,8 +23,15 @@ tar -zcvf $output "annotatedir"
   <inputs>
     <param name="traindir" type="data" label="Trained data"/>
     <param name="genodata" type="data" label="Genomedata"/>
-    <param name="include_coords" type="data" label="Include Coords" help="Limit to genomic coordinates in FILE (default all)"/>
-
+    <param name="include_coords" type="data" label="Include Coords" help="Include only genomic coordinates in FILE"/>
+    <param name="exclude_coords" type="data" optional="true" label="Exclude Coords" help="Optional: Filter out genomic coordinates in FILE"/>
+    <param name="output_label" type="select" label="Output Label" help="In the segmentation file, select which labels to print">
+	    <option value="seg" selected="True">Superlabel only</option>
+	    <option value="subseg">Sublabel only</option>
+	    <option value="full">Superlabel and sublabel</option>
+    </param>
+    <param name="seg_table" type="data" optional="true" label="Segment Hyperparameters" help="Optional: Load segement hyperparameters from FILE"/>
+    <param name="virtual_evidence" type="data" optional="true" label="Virtual Evidence" help="Optional: Virtual evidence with priors for labelsat each position in FILE"/>
   </inputs>
   <outputs>
     <data format="fast5.tar.gz" name="output" />
