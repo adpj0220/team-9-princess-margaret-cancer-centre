@@ -27,8 +27,8 @@ tar -zcvf $output "annotatedir"
     <conditional name="output_label">
       <param name="label" type="select" label="Output Label" help="In the segmentation file, select which labels to print">
               <option value="seg">Superlabel only</option>
-              <option value="subseg">Sublabel only</option>
-              <option value="full">Superlabel and sublabel</option>
+              <option value="\"subseg\"">Sublabel only</option>
+              <option value="\"full\"">Superlabel and sublabel</option>
       </param>
     </conditional>
     <param name="seg_table" type="data" optional="true" label="Segment Hyperparameters" help="Optional: Load segement hyperparameters from FILE"/>
