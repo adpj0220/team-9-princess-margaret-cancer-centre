@@ -24,8 +24,8 @@ tar -zcvf $output "annotatedir"
     <param name="genodata" type="data" label="Genomedata"/>
     <param name="include_coords" type="data" label="Include Coords" help="Include only genomic coordinates in FILE"/>
     <param name="exclude_coords" type="data" optional="true" label="Exclude Coords" help="Optional: Filter out genomic coordinates in FILE"/>
-    <param name="output_label" type="select" label="Output Label" help="In the segmentation file, select which labels to print">
-	    <option value="seg" selected="True">Superlabel only</option>
+    <param name="output_label" type="select" label="Output Label" value="seg" help="In the segmentation file, select which labels to print">
+	    <option value="seg">Superlabel only</option>
 	    <option value="subseg">Sublabel only</option>
 	    <option value="full">Superlabel and sublabel</option>
     </param>
