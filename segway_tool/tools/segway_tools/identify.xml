@@ -20,10 +20,10 @@ tar -zcvf $output "annotatedir"
 ]]>
   </command>
   <inputs>
-    <param name="traindir" type="data" label="Trained data"/>
-    <param name="genodata" type="data" label="Genomedata"/>
-    <param name="include_coords" type="data" label="Include Coords" help="Include only genomic coordinates in FILE"/>
-    <param name="exclude_coords" type="data" optional="true" label="Exclude Coords" help="Optional: Filter out genomic coordinates in FILE"/>
+    <param name="traindir" type="data" label="Trained Data"/>
+    <param name="genodata" type="data" label="Genomedata Archive"/>
+    <param name="include_coords" type="data" label="Include Coordinates" help="File containing the genomic coordinates to limit to"/>
+    <param name="exclude_coords" type="data" optional="true" label="Exclude Coordinates" help="Optional: File containing genomic coordinates to filter"/>
     <!--<conditional name="output_label">
       <param name="label" type="select" label="Output Label" help="In the segmentation file, select which labels to print">
               <option value="seg">Superlabel only</option>
@@ -31,8 +31,8 @@ tar -zcvf $output "annotatedir"
               <option value="full">Superlabel and sublabel</option>
       </param>
     </conditional>-->
-    <param name="seg_table" type="data" optional="true" label="Segment Hyperparameters" help="Optional: Load segement hyperparameters from FILE"/>
-    <param name="virtual_evidence" type="data" optional="true" label="Virtual Evidence" help="Optional: Virtual evidence with priors for labelsat each position in FILE"/>
+    <param name="seg_table" type="data" optional="true" label="Segment Hyperparameters" help="Optional: File containing segement hyperparameters to load"/>
+    <param name="virtual_evidence" type="data" optional="true" label="Virtual Evidence" help="Optional: Virtual evidence with priors for labelsat each position in the provided file"/>
   </inputs>
   <outputs>
     <data format="fast5.tar.gz" name="output" />

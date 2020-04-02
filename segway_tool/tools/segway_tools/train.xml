@@ -8,18 +8,21 @@
   #if str($exclude_coords) == 'None':
       #set exclude_coords = ''
   #end if
+  #if str($include_coords) == 'None':
+      #set include_coords = ''
+  #end if
 segway '--cluster-opt=' train --include-coords='$include_coords' --exclude-coords="$exclude_coords" --tracks-from='$tracks' --max-train-rounds='$max_train_rounds' --num-instances='$num_instances' --num-labels='$num_labels' --resolution='$resolution' '$genodata' './traindir' 2> /dev/null &&
 tar -zcvf $output ./traindir
 ]]>
   </command>
 
   <inputs>
-    <param name="genodata" type="data" label="Genomedata"/>
-    <param name="include_coords" type="data" label="Include Coords" help="Optional: Include only genomic coordinates in FILE"/>
-    <param name="exclude_coords" type="data" optional="true" label="Exclude Coords" help="Optional: Filter out genomic coordinates in FILE"/>
-    <param name="tracks" type="data" label="Tracks" help="Append tracks from FILE to list of tracks to use"/>
-    <param name="max_train_rounds" type="integer" value="100" min="1" label="Max Train Rounds" help="Run training instance on a maximum of specified rounds"/>
-    <param name="num_instances" type="integer" value="1" min="1" label="Number of Instances" help="Run specified number of training instances, randomizing start parameters by the specified number of times"/>
+    <param name="genodata" type="data" label="Genomedata Archive"/>
+    <param name="tracks" type="data" label="Tracks" help="File containing tracks to add to the tracks to use"/>
+    <param name="include_coords" type="data" optional="true" label="Include Coordinates" help="Optional: File containing the genomic coordinates to limit to"/>
+    <param name="exclude_coords" type="data" optional="true" label="Exclude Coordinates" help="Optional: File containing genomic coordinates to filter"/>
+    <param name="max_train_rounds" type="integer" value="100" min="1" label="Max Train Rounds" help="Maximum number of rounds each training instance runs"/>
+    <param name="num_instances" type="integer" value="1" min="1" label="Number of Instances" help="Number of training instances to run, randomizing start parameters by the specified number of times"/>
     <param name="num_labels" type="integer" value="2" min="1" label="Number of labels" help="Number of segment labels to create"/>
     <param name="resolution" type="integer" value="1" label="Resolution" help="Downsample to every RES bp"/>
   </inputs>
