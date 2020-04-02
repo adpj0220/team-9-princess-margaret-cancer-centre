@@ -27,7 +27,7 @@ tar -zcvf $output ./traindir
     <param name="resolution" type="integer" value="1" label="Resolution" help="Downsample to every RES bp"/>
   </inputs>
   <outputs>
-    <data format="fast5.tar.gz" name="output" label="Segway model trained on '$genodata'"/>
+    <data format="fast5.tar.gz" name="output" label="Segway model trained on ${genodata.name}"/>
   </outputs>
 
   <tests>

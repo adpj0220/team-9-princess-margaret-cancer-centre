@@ -35,7 +35,7 @@ tar -zcvf $output "annotatedir"
     <param name="virtual_evidence" type="data" optional="true" label="Virtual Evidence" help="Optional: Virtual evidence with priors for labelsat each position in the provided file"/>
   </inputs>
   <outputs>
-    <data format="fast5.tar.gz" name="output" label="Segway annotation of '$genodata'"/>
+    <data format="fast5.tar.gz" name="output" label="Segway annotation of ${genodata.name}"/>
   </outputs>
 
   <tests>
