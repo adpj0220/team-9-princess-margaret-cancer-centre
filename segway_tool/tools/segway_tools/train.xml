@@ -20,8 +20,10 @@ tar -zcvf $output ./traindir
     <param name="genodata" type="data" label="Genomedata Archive"/>
     <param name="tracks" type="data" label="Tracks" help="File containing tracks to add to the tracks to use"/>
     
-    <param name="include_coords" type="data" optional="true" label="Include Coordinates" help="Optional: File containing the genomic coordinates to limit to"/>
-    <param name="exclude_coords" type="data" optional="true" label="Exclude Coordinates" help="Optional: File containing genomic coordinates to filter"/>
+    <section name="Coordinate Options" expanded="true>
+        <param name="include_coords" type="data" optional="true" label="Include Coordinates" help="Optional: File containing the genomic coordinates to limit to"/>
+        <param name="exclude_coords" type="data" optional="true" label="Exclude Coordinates" help="Optional: File containing genomic coordinates to filter"/>
+    </section>
     
     <!--
     <param name="coords" type="select" label="Include/Exclude Coordinates" help="Optional: File containing genomic coordinates to limit to/filter">
