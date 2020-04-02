@@ -11,7 +11,7 @@
   #if str($include_coords) == 'None':
       #set include_coords = ''
   #end if
-segway '--cluster-opt=' train --include-coords='$include_coords' --exclude-coords="$exclude_coords" --tracks-from='$tracks' --max-train-rounds='$max_train_rounds' --num-instances='$num_instances' --num-labels='$num_labels' --resolution='$resolution' '$genodata' './traindir' 2> /dev/null &&
+segway '--cluster-opt=' train --include-coords='$include_coords' --exclude-coords="$exclude_coords" --tracks-from='$tracks' --max-train-rounds='$max_train_rounds' --num-instances='$num_instances' --num-labels='$num_labels' --resolution='$resolution' '$genodata' './traindir' > /dev/null 2>&1 &&
 tar -zcvf $output ./traindir
 ]]>
   </command>
@@ -27,7 +27,7 @@ tar -zcvf $output ./traindir
     <param name="resolution" type="integer" value="1" label="Resolution" help="Downsample to every RES bp"/>
   </inputs>
   <outputs>
-    <data format="fast5.tar.gz" name="output" label="Segway model trained on ${genodata.name}"/>
+    <data format="fast5.tar.gz" name="output" label="Segway model trained on '${genodata.name}'"/>
   </outputs>
 
   <tests>
