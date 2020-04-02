@@ -19,8 +19,22 @@ tar -zcvf $output ./traindir
   <inputs>
     <param name="genodata" type="data" label="Genomedata Archive"/>
     <param name="tracks" type="data" label="Tracks" help="File containing tracks to add to the tracks to use"/>
+    
+    
     <param name="include_coords" type="data" optional="true" label="Include Coordinates" help="Optional: File containing the genomic coordinates to limit to"/>
     <param name="exclude_coords" type="data" optional="true" label="Exclude Coordinates" help="Optional: File containing genomic coordinates to filter"/>
+    
+    <param name="coords" type="select" label="Include/Exclude Coordinates" help="Optional: File containing genomic coordinates to limit to/filter">
+        <option value="Include Coordinates">???</option>
+        <option value="Exclude Coordinates"></option>
+    </param>
+    <when value="Include Coordinates">
+    <param name="include_coords" type="data" optional="true" label="Include Coordinates" help="Optional: File containing the genomic coordinates to limit to"/>
+    </when>
+    <when value="Exlude Coordinates">
+    <param name="exclude_coords" type="data" optional="true" label="Exclude Coordinates" help="Optional: File containing genomic coordinates to filter"/>
+    </when>
+    
     <param name="max_train_rounds" type="integer" value="100" min="1" label="Max Train Rounds" help="Maximum number of rounds each training instance runs"/>
     <param name="num_instances" type="integer" value="1" min="1" label="Number of Instances" help="Number of training instances to run, randomizing start parameters by the specified number of times"/>
     <param name="num_labels" type="integer" value="2" min="1" label="Number of labels" help="Number of segment labels to create"/>
