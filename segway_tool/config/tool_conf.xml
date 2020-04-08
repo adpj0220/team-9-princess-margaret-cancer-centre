@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <toolbox monitor="true">
   <section id="segway_tool_main" name="Segway">
+		<tool file="segway_tools/genomedata_load.xml"  />
 		<tool file="segway_tools/train.xml"  />
     <tool file="segway_tools/identify.xml"  />
 	</section>
