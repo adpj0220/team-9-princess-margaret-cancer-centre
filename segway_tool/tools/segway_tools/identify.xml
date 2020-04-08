@@ -14,9 +14,9 @@
 	#if str($virtual_evidence) == 'None':
 		#set virtual_evidence = ''
 	#end if
-tar -zxvf $traindir &&
+tar -zxf $traindir &&
 segway identify --include-coords="$include_coords" --exclude-coords="$exclude_coords" --seg-table="$seg_table" --virtual-evidence="$virtual_evidence" "$genodata" "traindir" "annotatedir" 2> /dev/null &&
-tar -zcvf $output "annotatedir"
+tar -zcf $output "annotatedir"
 ]]>
   </command>
   <inputs>

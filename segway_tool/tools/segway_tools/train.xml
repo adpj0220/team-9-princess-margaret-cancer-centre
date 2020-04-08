@@ -12,7 +12,7 @@
       #set include_coords = ''
   #end if
 segway '--cluster-opt=' train --include-coords='$include_coords' --exclude-coords="$exclude_coords" --tracks-from='$tracks' --max-train-rounds='$max_train_rounds' --num-instances='$num_instances' --num-labels='$num_labels' --resolution='$resolution' '$genodata' './traindir' > /dev/null 2>&1 &&
-tar -zcvf $output ./traindir
+tar -zcf $output ./traindir
 ]]>
   </command>
 
