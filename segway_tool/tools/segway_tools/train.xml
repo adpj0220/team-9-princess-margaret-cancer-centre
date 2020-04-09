@@ -51,11 +51,11 @@ tar -zcf $output ./traindir
       <data name="file3" from_work_dir="params/output.master" />
       <data name="file4" from_work_dir="output.master" />
     </collection>-->
-    <data format="tab" name="train_result" from_work_dir="traindir/intermidate/train_results.0.tab"
+    <data auto_format="true" name="train_result" from_work_dir="traindir/intermidate/train_results.0.tab"
           label="intermidiate result"/>
       <collection name="params" type="list" label="params">
-          <data name="input.master" from_work_dir="traindir/params/input.master"/>
-          <data name="ourput.master" from_work_dir="traindir/params/ouptut.master"/>
+          <data auto_format="true" name="input_master" from_work_dir="traindir/params/input.master"/>
+          <data auto_format="true" name="ourput_master" from_work_dir="traindir/params/ouptut.master"/>
       </collection>
     <data format="fast5.tar.gz" name="output" label="Segway model trained on '${genodata.name}'"/>
   </outputs>
