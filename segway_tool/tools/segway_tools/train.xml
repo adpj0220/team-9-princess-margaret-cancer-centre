@@ -53,7 +53,7 @@ tar -zcf $output ./traindir
     </collection>-->
     <data format="bed" name="window" from_work_dir="traindir/window.bed"
           label="window try"/>
-      <collection name="params" type="list" label="important outputs">
+    <collection name="params" type="list" label="important outputs">
           <data format="tab" name="train_result" from_work_dir="traindir/intermidiate/train_results.0.tab"/>
           <data auto_format="true" name="input_master" from_work_dir="traindir/params/input.master"/>
           <data auto_format="true" name="output_master" from_work_dir="traindir/params/ouptut.master"/>
@@ -66,7 +66,7 @@ tar -zcf $output ./traindir
           <data auto_format="true" name="segway_trifile" from_work_dir="traindir/triangulation/segway.str.2.1.trifile"/>
           <data auto_format="true" name="shellscrip_Test" from_work_dir="traindir/cmdline/emt0.1.0.traindir.0718a18a7a1c11eaa9f6c757a411f238"/>
           <data auto_format="true" name="segway_inc" from_work_dir="traindir/auxiliary/segway.inc"/>
-      </collection>
+    </collection>
     <data format="fast5.tar.gz" name="output" label="Segway model trained on '${genodata.name}'"/>
   </outputs>
 
