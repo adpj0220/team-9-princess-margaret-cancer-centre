@@ -45,8 +45,8 @@ tar -zcf $output ./traindir
   </inputs>
   <outputs>
     <data format="fast5.tar.gz" name="output" label="Segway model trained on '${genodata.name}'"/>
-    <collection name="important_outputs" type="list">
-        <discover_datasets pattern="*" directory="/traindir" />
+    <collection name="important_outputs" type="list:list">
+        <discover_datasets pattern="*" directory="traindir" />
     </collection>
   </outputs>
 
