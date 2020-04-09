@@ -15,7 +15,7 @@
 		#set virtual_evidence = ''
 	#end if
 tar -zxf $traindir &&
-segway identify --include-coords="$include_coords" --exclude-coords="$exclude_coords" --seg-table="$seg_table" --virtual-evidence="$virtual_evidence" "$genodata" "traindir" "annotatedir" 2> /dev/null &&
+segway identify --include-coords="$include_coords" --exclude-coords="$exclude_coords" --seg-table="$seg_table" --virtual-evidence="$virtual_evidence" "$genodata" "traindir" "annotatedir" 2>&1 &&
 tar -zcf $output "annotatedir"
 ]]>
   </command>
@@ -24,19 +24,12 @@ tar -zcf $output "annotatedir"
     <param name="genodata" type="data" label="Genomedata Archive"/>
     <param name="include_coords" type="data" label="Include Coordinates" help="File containing the genomic coordinates to limit to"/>
     <param name="exclude_coords" type="data" optional="true" label="Exclude Coordinates" help="Optional: File containing genomic coordinates to filter"/>
-    <!--<conditional name="output_label">
-      <param name="label" type="select" label="Output Label" help="In the segmentation file, select which labels to print">
-              <option value="seg">Superlabel only</option>
-              <option value="subseg">Sublabel only</option>
-              <option value="full">Superlabel and sublabel</option>
-      </param>
-    </conditional>-->
     <param name="seg_table" type="data" optional="true" label="Segment Hyperparameters" help="Optional: File containing segement hyperparameters to load"/>
     <param name="virtual_evidence" type="data" optional="true" label="Virtual Evidence" help="Optional: Virtual evidence with priors for labelsat each position in the provided file"/>
   </inputs>
   <outputs>
       <collection type="list" label="important annotate outputs">
-          <data auto_format="true" name="output" from_work_dir="annotatedir/output/e/identify/vit0.annotatedir.bafe18b07a2111eabfdefbb218f6587c"/>
+          <data auto_format="true" name="annotate_output" from_work_dir="annotatedir/output/e/identify/vit0.annotatedir.bafe18b07a2111eabfdefbb218f6587c"/>
           <data format="bed" name="viterbi" from_work_dir="annotatedir/output/viterbi/viterbi0.bed"/>
       </collection>
     <data format="fast5.tar.gz" name="output" label="Segway annotation of '${genodata.name}'"/>
