@@ -38,7 +38,7 @@ tar -zcf $output "annotatedir"
       <collection type="list" label="important annotate outputs">
           <data auto_format="true" name="output" from_work_dir="annotatedir/output/e/identify/vit0.annotatedir.bafe18b07a2111eabfdefbb218f6587c"/>
           <data format="bed" name="viterbi" from_work_dir="annotatedir/output/viterbi/viterbi0.bed"/>
-      </collection>>
+      </collection>
     <data format="fast5.tar.gz" name="output" label="Segway annotation of '${genodata.name}'"/>
   </outputs>
 
