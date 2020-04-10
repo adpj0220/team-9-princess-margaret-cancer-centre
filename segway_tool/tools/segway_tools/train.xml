@@ -42,7 +42,7 @@ tar -zcf $output ./traindir
           <data auto_format="true" name="params_2" from_work_dir="traindir/params/params.0.params.2"/>
           <data auto_format="true" name="params_3" from_work_dir="traindir/params/params.0.params.3"/>
           <data auto_format="true" name="segway_trifile" from_work_dir="traindir/triangulation/segway.str.2.1.trifile"/>
-          <data auto_format="true" name="shellscrip_Test" from_work_dir="traindir/cmdline/emt0.1.0.traindir.0718a18a7a1c11eaa9f6c757a411f238"/>
+	  <!--<data auto_format="true" name="shellscrip_Test" from_work_dir="traindir/cmdline/emt0.1.0.traindir.0718a18a7a1c11eaa9f6c757a411f238"/>-->
           <data auto_format="true" name="segway_inc" from_work_dir="traindir/auxiliary/segway.inc"/>
     </collection>
     <data format="fast5.tar.gz" name="output" label="Segway model trained on '${genodata.name}'"/>
