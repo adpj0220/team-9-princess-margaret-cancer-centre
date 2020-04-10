@@ -28,7 +28,7 @@ tar -zcf $output "annotatedir"
     <param name="virtual_evidence" type="data" optional="true" label="Virtual Evidence" help="Optional: Virtual evidence with priors for labelsat each position in the provided file"/>
   </inputs>
   <outputs>
-      <collection type="list" label="important annotate outputs">
+      <collection type="list" label="Individual files of Segway annotation of '${genodata.name}'">
           <data auto_format="true" name="annotate_output" from_work_dir="annotatedir/output/e/identify/vit0.annotatedir.bafe18b07a2111eabfdefbb218f6587c"/>
           <data format="bed" name="viterbi" from_work_dir="annotatedir/output/viterbi/viterbi0.bed"/>
       </collection>
