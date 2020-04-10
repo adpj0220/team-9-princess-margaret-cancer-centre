@@ -2,7 +2,7 @@
   <requirements>
     <requirement type="package" version="3.0">segway</requirement>
   </requirements>
-  <description></description>
+  <description>Trains a Genomedata archive for Segway's semi-automated genome annotation.</description>
   <command>
   <![CDATA[
   #if str($exclude_coords) == 'None':

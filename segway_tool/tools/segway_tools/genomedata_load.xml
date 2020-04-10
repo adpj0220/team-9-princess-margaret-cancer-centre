@@ -2,8 +2,8 @@
 		<requirements>
 				<requirement type="package" version="3.0">segway</requirement>
 		</requirements>
-		<description></description>
-		<help>Create Genomedata archive by loading specified track data and sequences</help>
+		<description>by loading specified track data and sequences</description>
+		<help></help>
 		<command>
 		<![CDATA[
 		
